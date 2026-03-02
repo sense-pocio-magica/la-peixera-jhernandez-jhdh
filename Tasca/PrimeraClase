@@ -1,0 +1,19 @@
+Peix.cs
+------------------
+bool sexe;
+virtual void Mou();
+
+PeixNormal.cs : Peix
+-------------------
+
+Taurons.cs : Peix
+-------------------
+int rondes;
+
+Pops.cs : Peix
+-------------------
+
+Tortugues.cs : Peix
+-------------------
+bool HaXocatAmbTauro;
+virtual void XocaAmbTauro();
