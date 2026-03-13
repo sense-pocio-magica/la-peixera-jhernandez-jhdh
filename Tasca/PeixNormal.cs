@@ -33,7 +33,7 @@ public class PeixNormal : Animal
                 {
                     sexeFill = Sexe.Famella;
                 }
-                return new PeixNormal(return new PeixNormal(sexeFill, X, Y);
+                return new PeixNormal(sexeFill, X, Y);
             }
         }
 

@@ -36,7 +36,7 @@ internal class Program
         
         for (var i = 0; i < NumPops; i++)
         {
-            animals.Add(new Pop(Animal.Sexe.SolSexe,rnd.Next(0,20),rnd.Next(0,20)));
+            animals.Add(new Pop(Animal.Sexe.SolSexe,0,0));
         }
         
         var tauler = new Tauler(animals);

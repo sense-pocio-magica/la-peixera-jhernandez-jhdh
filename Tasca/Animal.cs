@@ -25,8 +25,9 @@ public abstract class Animal
     protected int X;
     protected int Y;
     protected bool Viu = true;
-    private  (int X, int Y) Direccio;
+    protected  (int X, int Y) Direccio;
     Sexe genere {get; set;}
+    protected const int MidaTauler = 20;
 
     public Animal(Sexe sexe, int x, int y)
     {
@@ -47,18 +48,23 @@ public abstract class Animal
     }
     
     public abstract Animal? DosAnimalsEsTroben(Animal altre);
-    
+
+    public void CanviaDireccio()
+    {
+        Direccio = Direccions[random.Next(Direccions.Length)];
+    }
 
     public virtual void Mou()
     {
-        if (X == 20) X = 0;
-        if (Y == 20) Y = 0;
-        if (X == -1) X = 19;
-        if (Y == -1) Y = 19;
-        
         
         X +=  Direccio.X;
         Y +=  Direccio.Y;
+        
+        if (X == MidaTauler) X = 0;
+        if (Y == MidaTauler) Y = 0;
+        if (X == -1) X = MidaTauler-1;
+        if (Y == -1) Y = MidaTauler-1;
+        
         
     }
 }
