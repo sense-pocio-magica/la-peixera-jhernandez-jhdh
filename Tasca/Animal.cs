@@ -22,8 +22,8 @@ public abstract class Animal
 
     protected static readonly Random random = new();
 
-    protected int X;
-    protected int Y;
+    public int X  { get; set; }
+    public int Y { get; set; }
     protected bool Viu = true;
     protected  (int X, int Y) Direccio;
     Sexe genere {get; set;}
@@ -40,6 +40,11 @@ public abstract class Animal
     public void Mata()
     {
         Viu = false;
+    }
+
+    public bool EstaViu()
+    {
+        return Viu;
     }
 
     public Sexe genereSexe()

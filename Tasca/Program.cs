@@ -40,6 +40,8 @@ internal class Program
         }
         
         var tauler = new Tauler(animals);
+        tauler.ExecutaRondes();
+        tauler.MostraResultats();
     }
 
 
