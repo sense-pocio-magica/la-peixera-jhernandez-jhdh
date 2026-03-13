@@ -1,0 +1,20 @@
+Peix.cs
+------------------
+enum Sexe;
+enum Direccions;
+virtual void Mou();
+
+PeixNormal.cs : Peix
+-------------------
+
+Tauro.cs : Peix
+-------------------
+int rondes;
+
+Pop.cs : Peix
+-------------------
+
+Tortuga.cs : Peix
+-------------------
+bool HaXocatAmbTauro;
+virtual void XocaAmbTauro();
