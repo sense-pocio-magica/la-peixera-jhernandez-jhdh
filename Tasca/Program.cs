@@ -8,9 +8,9 @@ internal class Program
     
     static void Main(string[] args)
     {
-        int NumPeixNormal = 100;
-        int NumTortugues = 6;
-        int NumTaurons = 20;
+        int NumPeixNormal = 50;
+        int NumTortugues = 3;
+        int NumTaurons = 10;
         int NumPops = 15;
         
         Random rnd = new Random();
